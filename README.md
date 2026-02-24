@@ -155,6 +155,7 @@ python main.py
 
 ### 支持的模型
 
+- glm-5（推荐）
 - glm-4.7（推荐）
 - glm-4-plus
 - glm-4-air
