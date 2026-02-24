@@ -1,0 +1,72 @@
+请根据以下信息写作第{{chapter_number}}章：《{{chapter_title}}》
+
+---
+
+## 【大纲信息】
+
+{{chapter_plan|truncate(1000) or '请根据上下文继续推进剧情'}}
+
+---
+
+## 【记忆上下文】
+
+{% if memory_context %}
+{{memory_context}}
+{% endif %}
+
+---
+
+## 【角色设定】
+
+{{character_summary}}
+
+---
+
+## 【世界观设定】
+
+{{worldview_summary}}
+
+---
+
+## 【上一章结尾】
+
+{{prev_summary}}
+
+---
+
+## 【写作要求】
+
+1. 字数要求：{{target_words}}-{{max_words}}字
+2. 保持主角{{protagonist_name}}的性格：{{protagonist_personality}}
+3. 按大纲推进剧情，如有需要可以适当发挥
+4. 包含对话和动作描写
+5. 结尾留下悬念，预示下一章内容
+
+## 【输出格式】
+
+请按以下格式输出：
+
+```
+# 第{{chapter_number}}章 {{chapter_title}}
+
+[正文内容，3000-5000字]
+
+---
+
+**下章预告：**
+
+[下一章的简短预告，100字左右]
+
+敬请期待第{{chapter_number + 1}}章：《[下章标题]》
+
+---
+
+**本章字数：约[字数]字**
+
+**核心看点：**
+- [看点1]
+- [看点2]
+- [看点3]
+```
+
+请开始创作：
